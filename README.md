@@ -120,10 +120,14 @@ rect(position, 0, 10, 10)
 Run the sketch, and make notes below each of these questions:
 
 1. What happens?
+A little square moves out of the canvas along the x axis
 2. Why?
 3. What happens if you change 1 to a larger or smaller number?
+It adjusts the speed of the square
 4. Why?
+Because the number determines the speed and direction of the square
 5. What about a negative number?
+It moves inthe other direction
 
 Add this line at the bottom of `draw`:
 
@@ -133,6 +137,9 @@ console.log('The position is ' + position)
 
 Open up the browser console again (right click -> inspect element -> console)
 and see what happens. **Why?**
+
+The console keeps printing a new number, the console crashes.
+This is an infinite loop.
 
 Add this line at the top of your program. Add your name!
 
@@ -148,6 +155,8 @@ text('My name is' + name, 10, 30)
 
 **What happens and why? Why isn’t there a space between the word ‘name’ and your
 name? Can you add one?**
+
+Text appeared because i used a text function. I can add a space by added " "+ "emma"
 
 Add this line to the top of your sketch:
 
@@ -168,6 +177,12 @@ Run your code to make sure it still works. There should be no visible changes.
 **Add code to your sketch to show the value of `moving` in `draw`.** Use
 `text()` or `console.log`. Try clicking the mouse on the sketch and see what
 happens. What’s going on here? How does the content of `mousePressed` work?
+
+Moving is false, when mouse is pressed it logs as true.
+
+```js
+//stuck
+```
 
 Make it so the square stops and starts when you click the mouse. Use the code
 below as a starting point:
